@@ -10,7 +10,7 @@ export default {
     getPokemons: async () => {
         let pokemons = []
         // 1010
-        for (let i = 1; i <= 1010; i++) {
+        for (let i = 1; i <= 100; i++) {
             pokemons.push((await Api.get(`/${i}/`)).data)
         }
         return pokemons
